@@ -1,4 +1,4 @@
-package client.commands;
+package server.commands;
 
 
 import requests.*;
@@ -13,8 +13,8 @@ public class UpdateId extends AbstractCommand{
 
     @Serial
     private static final long serialVersionUID = 1L;
-    public UpdateId(NetworkServer networkServer) {
-        super("update", networkServer);
+    public UpdateId(Receiver receiver) {
+        super("update", receiver);
     }
 
     @Override

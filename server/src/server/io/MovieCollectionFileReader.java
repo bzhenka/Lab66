@@ -1,6 +1,6 @@
-package read;
+package server.io;
 
-import client.exceptions.IncorrectFileException;
+import server.exceptions.IncorrectFileException;
 import server.MovieCollection;
 
 import java.io.IOException;

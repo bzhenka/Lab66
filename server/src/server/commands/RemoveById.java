@@ -1,4 +1,4 @@
-package client.commands;
+package server.commands;
 import requests.RemoveByIdRequest;
 import requests.Request;
 import responses.RemoveByIdResponse;
@@ -11,8 +11,8 @@ public class RemoveById extends AbstractCommandResult<Boolean>{
     @Serial
     private static final long serialVersionUID = 1L;
     private final int id;
-    public RemoveById(NetworkServer networkServer, int id) {
-        super("removeById", networkServer);
+    public RemoveById(Receiver receiver, int id) {
+        super("removeById", receiver);
         this.id = id;
     }
 

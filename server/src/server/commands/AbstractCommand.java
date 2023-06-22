@@ -1,15 +1,14 @@
-package client.commands;
+package server.commands;
 
-import networkServer.NetworkServer;
 import server.Receiver;
 
 import java.io.Serializable;
 
 public abstract class AbstractCommand implements Command, Serializable {
-    final String name;
-    final transient NetworkServer networkServer;
+    protected final Receiver receiver;
+    protected final String name;
 
-    public AbstractCommand(String name, NetworkServer networkServer) {
+    public AbstractCommand(String name, Receiver receiver) {
         this.name = name;
         this.receiver = receiver;
     }

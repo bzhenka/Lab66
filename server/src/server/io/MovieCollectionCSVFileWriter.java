@@ -1,8 +1,9 @@
-package read;
+package server.io;
 
 import models.Movie;
 import server.MovieCollection;
 import com.opencsv.CSVWriter;
+import server.MovieCollectionFileWriter;
 
 import java.io.*;
 import java.util.ArrayDeque;

@@ -1,4 +1,4 @@
-package read;
+package server.io;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -11,8 +11,9 @@ import com.opencsv.*;
 import enums.*;
 import models.*;
 import server.MovieCollection;
-import client.exceptions.FilePermissionException;
-import client.exceptions.IncorrectFileException;
+import server.MovieCollectionFileReader;
+import server.exceptions.FilePermissionException;
+import server.exceptions.IncorrectFileException;
 import server.exceptions.WrongArgumentException;
 
 import static checkers.MovieArgumentChecker.checkMovie;

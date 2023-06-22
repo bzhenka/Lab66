@@ -1,4 +1,4 @@
-package client.commands;
+package server.commands;
 
 import requests.CountLessThanOperatorRequest;
 import requests.Request;
@@ -13,12 +13,10 @@ public class CountLessThanOperator extends AbstractCommandResult<Integer>{
     private static final long serialVersionUID = 1L;
     private final String[] operatorArgs;
     public Integer result;
-    public CountLessThanOperator(NetworkServer networkServer, String[] operatorArgs) {
-        super("countLessThanOperator", networkServer);
+    public CountLessThanOperator(Receiver receiver, String[] operatorArgs) {
+        super("countLessThanOperator", receiver);
         this.operatorArgs = operatorArgs;
     }
-
-
 
     @Override
     public Integer getResult() {

@@ -3,7 +3,7 @@ package client;
 import responses.Response;
 
 public interface Client {
-    Response worker();
+    void worker();
     Response exit();
     Response help();
 

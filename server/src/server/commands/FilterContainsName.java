@@ -1,4 +1,4 @@
-package client.commands;
+package server.commands;
 import models.Movie;
 import requests.FilterContainsNameRequest;
 import requests.Request;
@@ -15,8 +15,8 @@ public class FilterContainsName extends AbstractCommandResult<ArrayDeque<Movie>>
     private static final long serialVersionUID = 1L;
     private ArrayDeque<Movie> result = null;
 
-    public FilterContainsName(NetworkServer networkServer) {
-        super("filterContainsName", networkServer);
+    public FilterContainsName(Receiver receiver) {
+        super("filterContainsName", receiver);
     }
 
 

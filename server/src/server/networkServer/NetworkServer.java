@@ -1,4 +1,4 @@
-package networkServer;
+package server.networkServer;
 
 import responses.Response;
 

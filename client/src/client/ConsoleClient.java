@@ -32,7 +32,7 @@ public class ConsoleClient implements Client {
                 executeCommand(line);
 
             } catch (WrongCommandException | WrongArgumentsLengthException | IOException | WrongArgumentException |
-                     InputInterruptionException | MovieNotFoundException e) {
+                     InputInterruptionException | MovieNotFoundException | NetworkClientException e) {
                 System.out.println("Неверные данные " + e.getMessage());
             }
         }

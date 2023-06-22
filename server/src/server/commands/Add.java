@@ -1,4 +1,4 @@
-package client.commands;
+package server.commands;
 import requests.AddRequest;
 import requests.Request;
 import responses.AddResponse;
@@ -9,9 +9,8 @@ public class Add extends AbstractCommand{
 
 //
 
-    public Add(NetworkServer networkServer, String[] movieArguments) {
-        super("add", networkServer);
-
+    public Add(Receiver receiver, String[] movieArguments) {
+        super("add", receiver);
     }
 
 

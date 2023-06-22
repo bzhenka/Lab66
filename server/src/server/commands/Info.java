@@ -1,4 +1,4 @@
-package client.commands;
+package server.commands;
 import requests.Request;
 import responses.InfoResponse;
 import responses.Response;
@@ -10,8 +10,8 @@ public class Info extends AbstractCommandResult<String[]>{
     @Serial
     private static final long serialVersionUID = 1L;
     private String[] result = null;
-    public Info(NetworkServer networkServer) {
-        super("info", networkServer);
+    public Info(Receiver receiver) {
+        super("info", receiver);
     }
 
 

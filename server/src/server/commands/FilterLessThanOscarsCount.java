@@ -1,4 +1,4 @@
-package client.commands;
+package server.commands;
 
 
 import models.Movie;
@@ -17,8 +17,8 @@ public class FilterLessThanOscarsCount extends AbstractCommandResult<ArrayDeque<
     private final Long oscarCount;
     public ArrayDeque<Movie> result = null;
 
-    public FilterLessThanOscarsCount(NetworkServer networkServer, Long oscarCount) {
-        super("filterLessThanOscarsCount", networkServer);
+    public FilterLessThanOscarsCount(Receiver receiver, Long oscarCount) {
+        super("filterLessThanOscarsCount", receiver);
         this.oscarCount=oscarCount;
     }
 

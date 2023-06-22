@@ -1,4 +1,4 @@
-package client.commands;
+package server.commands;
 import models.Movie;
 import requests.HeadRequest;
 import requests.Request;
@@ -12,8 +12,8 @@ public class Head extends AbstractCommandResult<Movie> {
     @Serial
     private static final long serialVersionUID = 1L;
     public final Movie movie = result;
-    public Head(NetworkServer networkServer) {
-        super("head", networkServer);
+    public Head(Receiver receiver) {
+        super("head", receiver);
     }
 
     @Override

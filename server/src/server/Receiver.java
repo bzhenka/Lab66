@@ -1,12 +1,12 @@
 package server;
 
 import enums.*;
-import client.exceptions.FilePermissionException;
-import client.exceptions.IncorrectFileException;
-import read.MovieCollectionCSVFileReader;
-import read.MovieCollectionCSVFileWriter;
-import read.MovieCollectionFileReader;
-import read.MovieCollectionFileWriter;
+import server.exceptions.FilePermissionException;
+import server.exceptions.IncorrectFileException;
+import server.io.MovieCollectionCSVFileReader;
+import server.io.MovieCollectionCSVFileWriter;
+import server.io.MovieCollectionFileReader;
+import server.io.MovieCollectionFileWriter;
 import models.*;
 import java.io.IOException;
 import java.time.format.DateTimeFormatter;

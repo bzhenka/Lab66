@@ -1,4 +1,4 @@
-package client.commands;
+package server.commands;
 import models.Movie;
 import requests.Request;
 import responses.RemoveHeadResponse;
@@ -11,8 +11,8 @@ public class RemoveHead extends AbstractCommandResult<Movie> {
     @Serial
     private static final long serialVersionUID = 1L;
     private Movie result = null;
-    public RemoveHead(NetworkServer networkServer) {
-        super("removeHead", networkServer);
+    public RemoveHead(Receiver receiver) {
+        super("removeHead", receiver);
     }
 
 

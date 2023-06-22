@@ -1,7 +1,6 @@
-package client.commands;
+package server.commands;
 
 
-import networkServer.NetworkServer;
 import requests.Request;
 import responses.*;
 import server.Receiver;
@@ -12,8 +11,8 @@ public class Clear extends AbstractCommand{
     @Serial
     private static final long serialVersionUID = 1L;
 
-    public Clear(NetworkServer networkServer) {
-        super("clear", networkServer);
+    public Clear(Receiver receiver) {
+        super("clear", receiver);
     }
 
 
